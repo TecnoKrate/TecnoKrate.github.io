@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  background: url(../img/body.png) no-repeat 0 0;
+  background-size: cover;
+}
+
+nav.navbar-default {
+  height: 80px;
+  background-color: #fff;
+  border-bottom: 2px solid rgba(51, 51, 51, 0.4);
+  padding: 0 0;
+}
+
+nav.navbar-default .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav.navbar-default .navbar-brand span.logo {
+  color: #333;
+  text-shadow: 2px 2px 3px #b1b3bd;
+}
+
+nav.navbar-default ul.menu {
+  height: inherit;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+nav.navbar-default ul.menu li.nav-item {
+  display: inline-block;
+  margin-right: 14px;
+  text-align: center;
+}
+
+nav.navbar-default ul.menu li.nav-item a.nav-link {
+  color: #333;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1.4em 0.8em;
+}
+
+nav.navbar-default ul.menu li.nav-item:target::before {
+  content: "";
+  display: block;
+  height: 90px;
+  /* fixed header height*/
+  margin: -90px 0 0;
+  /* negative fixed header height */
+}
+
+nav.navbar-default ul.menu li.nav-item a.nav-link:hover, nav.navbar-default ul.menu li.nav-item :active {
+  color: teal;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+nav.navbar-default ul.menu li.nav-item:last-child {
+  margin-right: 0;
+}
+
+.is-Sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1006;
+  -webkit-box-shadow: #ddd 3px 2px 4px;
+          box-shadow: #ddd 3px 2px 4px;
+  background: darkgoldenrod;
+}
+
+.main-wrapper {
+  background-color: #efefef;
+  min-height: 300px;
+  overflow: auto;
+}
+
+.about-section {
+  height: 100vh;
+  background-color: #fff;
+  margin-top: 60px;
+  padding: 40px 65px;
+  font-family: "Raleway";
+}
+
+.about-details h3 span.name_person {
+  color: teal;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.about-details p {
+  font-size: 1.2rem;
+}
+
+.about-details .about_spec {
+  font-weight: 600;
+  font-style: italic;
+}
+
+div.profile_img {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #333;
+  border-radius: 49.99%;
+  -webkit-border-radius: 49.99%;
+  -moz-border-radius: 49.99%;
+  -ms-border-radius: 49.99%;
+  -o-border-radius: 49.99%;
+  background-size: contain;
+}
+
+div.profile_img img {
+  max-width: 100%;
+  border-radius: 49.99%;
+  margin: 2px;
+  border: 2px double #bbb4b4;
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 49.99%;
+  -moz-border-radius: 49.99%;
+  -ms-border-radius: 49.99%;
+  -o-border-radius: 49.99%;
+}
+
+.lnk_resume {
+  display: block;
+  position: relative;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  -ms-border-radius: 1.2rem;
+  -o-border-radius: 1.2rem;
+  background-color: #00b3b3;
+  border: #efefef 2px solid;
+  width: 100%;
+}
+
+.lnk_resume span {
+  font-family: "Open Sans";
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+section.skills-section {
+  height: 100vh;
+  background-color: #fff;
+  margin-top: 60px;
+  padding: 40px 65px;
+  font-family: "Raleway";
+}
+
+section.skills-section .skillbar {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #eee;
+  height: 60px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  transition: ease-in-out 0.33s;
+  -webkit-transition: ease-in-out 0.33s;
+  -moz-transition: ease-in-out 0.33s;
+  -ms-transition: ease-in-out 0.33s;
+  -o-transition: ease-in-out 0.33s;
+  transition-property: width, background-color;
+  -webkit-transition-property: width, background-color;
+  -ms-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+}
+
+section.skills-section .skillbar .skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  font-family: "Monteserrat", serif;
+  color: #eee;
+  background: #001a1a;
+}
+
+section.skills-section .skillbar .skillbar-title span {
+  display: block;
+  background: rgba(33, 33, 33, 0.2);
+  padding: 0 18px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+section.skills-section .skillbar .skillbar-bar {
+  height: 30px;
+  width: 0;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  float: left;
+  background-color: teal;
+}
+
+section.skills-section .skillbar .skillbar-percent {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  font-size: 0.8rem;
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+}
+
+h2.title-section {
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 70px;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+}
+
+h2.title-section::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  border: 2px solid #333;
+  bottom: -0.5em;
+  position: relative;
+  left: 42%;
+}
+
+section.edu-section {
+  min-height: 100vh;
+  height: 100%;
+  background-color: #fff;
+  margin-top: 60px;
+  padding: 40px 65px;
+  font-family: "Raleway";
+}
+
+section.edu-section .edu-inner {
+  display: block;
+  position: relative;
+  max-height: 100vh;
+}
+
+section.edu-section .edu-inner::before {
+  clear: both;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 5px;
+  top: 0;
+  left: 50%;
+  background: teal;
+}
+
+section.edu-section .edu-inner .edu-item {
+  background: #fff;
+  display: block;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 40%;
+  border: teal 3px solid;
+  position: relative;
+}
+
+section.edu-section .edu-inner .edu-item:nth-child(odd) {
+  float: left;
+  display: block;
+  margin-bottom: 80px;
+}
+
+section.edu-section .edu-inner .edu-item:nth-child(even) {
+  float: right;
+  margin-top: 80px;
+}
+
+section.portfolio-section {
+  height: 100vh;
+  background-color: #fff;
+  margin-top: 60px;
+  padding: 40px 65px;
+  font-family: "Raleway";
+}
+
+section.portfolio-section .portfolio-item {
+  width: 100%;
+  border: #eee solid 2px;
+}
+
+section.portfolio-section .portfolio-item .portfolio-img {
+  position: relative;
+}
+
+section.portfolio-section .portfolio-item .portfolio-img img {
+  max-width: 100%;
+}
+
+section.portfolio-section .portfolio-item .portfolio-img::after {
+  content: '\A';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  left: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+section.portfolio-section .portfolio-item .portfolio-desc {
+  background: #eee;
+  font-size: 13px;
+  height: 100%;
+}
+
+section.portfolio-section .portfolio-item:hover .portfolio-img::after {
+  width: 100%;
+  opacity: 1;
+  transition: all 0.33s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition: all 0.33s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-transition: all 0.33s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -ms-transition: all 0.33s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-transition: all 0.33s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+section.portfolio-section .portfolio-item:hover .portfolio-desc {
+  background: teal;
+  color: #eee;
+  transition: all 0.33s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition: all 0.33s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-transition: all 0.33s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -ms-transition: all 0.33s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-transition: all 0.33s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+section.contact-section {
+  height: 100vh;
+  background-color: #fff;
+  margin-top: 60px;
+  padding: 40px 65px;
+  font-family: "Raleway";
+}
+
+section.contact-section .mode-contact {
+  width: 100%;
+  height: inherit;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+section.contact-section .mode-contact .mode-icon {
+  font-size: 2rem;
+  padding: 1rem;
+  padding-right: 1.6rem;
+  float: left;
+}
+
+section.contact-section .mode-contact .mode-body {
+  float: left;
+}
+/*# sourceMappingURL=mystyle.css.map */
